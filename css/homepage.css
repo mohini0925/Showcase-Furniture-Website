@@ -1,0 +1,187 @@
+*{
+	box-sizing: border-box;
+}
+
+#wrapper{
+	width: 100%;
+	overflow: hidden;
+    position: relative;
+    padding: 0;
+}
+
+.navbar{
+	background-color: #ffffff;
+	padding: 0;
+	height:40px;
+}
+
+nav a{
+	color: #160d0b;
+	font-size: 16px;
+	font-weight: 400;
+	margin-left: 20px;
+}
+
+nav a:hover{
+    color: #160d0b;
+	font-size: 16px;
+	font-weight: 600;
+	margin-left: 20px;
+	border-bottom: 3px solid #a25d4a;
+}
+
+.navbar-toggler:focus{
+  border: none;
+  outline: none;
+}
+
+.carousel-item{
+    text-align: center;
+    max-height: 550px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+
+.subscribe-letter{
+	margin: 50px 10%;
+	background-color:#5d4a41;
+}
+
+.fit-image{
+width: 100%;
+object-fit: cover;
+height: 400px; /* only if you want fixed height */
+}
+
+.subscribe-heading{
+	color:#b3aaa6;
+	font-size: 2.4rem;
+	font-weight: 400;
+
+}
+.subscribe-box{
+	margin: 15%;
+}
+.subscribe-text{
+	color:#b3aaa6;
+	font-size: 1.3rem;
+	font-weight: 400;
+	margin-top: 30px; 
+
+}
+
+.buttonInside{
+	  position:relative;
+	  margin-bottom:10px;
+}
+
+.buttonInside input{
+  height:50px;
+  width:100%;
+  padding-left:20px;
+  border-radius:50px;
+  margin-top: 30px;
+  border:none;
+  outline:none;
+}
+input:focus{
+	border: none;
+}
+button{
+  position:absolute;
+  right: 0px;
+  top: 0px;
+  border:none;
+  height:40px;
+  outline:none;
+  text-align:center;
+}
+.btn{
+  background-color: #f36437;
+  color: #ffffff;
+  border-radius:50px;
+  margin: 5px;
+  font-size:1rem;
+}
+.btn:hover{
+  color: #ffffff;
+}
+
+button:hover{
+  cursor:pointer;
+}
+
+#navbarCollapse{
+	background-color: white;
+}
+
+.hidden{
+	display: none;
+}
+
+@media (max-width: 500px) {
+ .fit-image{
+width: 100%;
+object-fit: cover;
+height: 200px; /* only if you want fixed height */
+}
+
+.subscribe-heading{
+	color:#b3aaa6;
+	font-size: 1.5rem;
+	font-weight: 400;
+
+}
+
+.subscribe-letter{
+	background-color:#5d4a41;
+	margin: 50px 1%;
+}
+
+.subscribe-box{
+	margin: 5%;
+}
+.subscribe-text{
+	color:#b3aaa6;
+	font-size: 1rem;
+	font-weight: 400;
+	margin-top: 10px; 
+
+}
+
+.buttonInside{
+	  position:relative;
+	  margin-bottom:10px;
+}
+
+.buttonInside input{
+  height:30px;
+  width:100%;
+  padding-left:20px;
+  border-radius:50px;
+  margin-top: 30px;
+  border:none;
+  outline:none;
+}
+
+button{
+  position:absolute;
+  right: 0px;
+  top: 0px;
+  border:none;
+  height:20px;
+  outline:none;
+  text-align:center;
+}
+.btn{
+  background-color: #f36437;
+  color: #ffffff;
+  border-radius:50px;
+  padding: 0 5px;
+  font-size:0.8rem;
+}
+
+.form-control{
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+
+}
