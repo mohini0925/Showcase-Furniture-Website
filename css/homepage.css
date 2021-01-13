@@ -68,6 +68,7 @@ height: 400px; /* only if you want fixed height */
 	color:#b3aaa6;
 	font-size: 2.4rem;
 	font-weight: 400;
+  font-family: 'Raleway';
 
 }
 .subscribe-box{
@@ -77,7 +78,8 @@ height: 400px; /* only if you want fixed height */
 	color:#b3aaa6;
 	font-size: 1.3rem;
 	font-weight: 400;
-	margin-top: 30px; 
+	margin-top: 30px;
+  font-family: 'Crimson'; 
 
 }
 
@@ -127,6 +129,39 @@ button:hover{
 	display: none;
 }
 
+.benefits{
+  margin: 50px 10%;
+  background-color: #ce907e1a;
+  padding:3%;
+}
+
+.benefits-icon{
+  background-color:#ffffff;
+  padding:15px;
+  border-radius:100%;
+  opacity: 0.8;
+}
+
+.benefits-box{
+  padding:0 7%;
+}
+
+.benefits-main-text{
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #a25d4a;
+  font-family: 'Crimson';
+}
+
+.benefits-text{
+  font-size:0.7rem;
+  font-weight: 300;
+  color: #a25d4a;
+}
+
+
+
 @media (max-width: 500px) {
  .fit-image{
 width: 100%;
@@ -138,12 +173,13 @@ height: 200px; /* only if you want fixed height */
 	color:#b3aaa6;
 	font-size: 1.5rem;
 	font-weight: 400;
+    font-family: 'Raleway'; 
 
 }
 
 .subscribe-letter{
 	background-color:#5d4a41;
-	margin: 50px 1%;
+	margin: 50px 2%;
 }
 
 .subscribe-box{
@@ -151,9 +187,10 @@ height: 200px; /* only if you want fixed height */
 }
 .subscribe-text{
 	color:#b3aaa6;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	font-weight: 400;
 	margin-top: 10px; 
+  font-family: 'Crimson'; 
 
 }
 
@@ -163,7 +200,7 @@ height: 200px; /* only if you want fixed height */
 }
 
 .buttonInside input{
-  height:35px;
+  height:40px;
   width:100%;
   padding-left:20px;
   border-radius:50px;
@@ -177,7 +214,7 @@ height: 200px; /* only if you want fixed height */
   right: 0px;
   top: 0px;
   border:none;
-  height:25px;
+  height:30px;
   outline:none;
   text-align:center;
 }
@@ -185,13 +222,49 @@ height: 200px; /* only if you want fixed height */
   background-color: #f36437;
   color: #ffffff;
   border-radius:50px;
-  padding: 0 5px;
-  font-size:0.8rem;
+  padding: 0 10px;
+  font-size:0.6rem;
 }
 
 .form-control{
 	font-size: 0.8rem;
 	font-weight: 300;
 }
+
+.benefits{
+  margin: 20px 2%;
+  background-color: #ce907e1a;
+  padding:3%;
+  
+}
+
+.benefits-icon{
+  background-color:#ffffff;
+  padding:15px;
+  border-radius:100%;
+}
+
+.benefits-box{
+  padding:0 7%;
+}
+
+.benefits-single{
+  padding:10px;
+}
+
+.benefits-main-text{
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #a25d4a;
+  font-family: 'Crimson';
+}
+
+.benefits-text{
+  font-size:0.6rem;
+  font-weight: 300;
+  color: #a25d4a;
+}
+
 
 }

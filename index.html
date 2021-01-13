@@ -15,6 +15,12 @@
 	<!-- AOS -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+
+
 
 	<title>Home</title>
 
@@ -22,7 +28,7 @@
 <body>
 
 <div id="wrapper">	
-<nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand-md fixed-top">
         <!-- <a href="#" class="navbar-brand">Brand</a> -->
 
         <button type="button" id="ChangeToggle" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -38,39 +44,78 @@
                 <a href="#" class="nav-item nav-link">Products</a>
                 <a href="login.html" class="nav-item nav-link">Login/Register</a>
             </div>
-           
         </div>
-
-
-        
-        
     </nav>
 
 
-<div class="container-lg">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <!-- Wrapper for carousel items -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://images.unsplash.com/photo-1550226891-ef816aed4a98?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="First Slide" width="100%">
-            </div>
-            <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Second Slide" width="100%">
-            </div>
-            <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1602023039928-7af5a2f000fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Third Slide" width="100%">
+    <div class="container-lg">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1550226891-ef816aed4a98?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="First Slide" width="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Second Slide" width="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1602023039928-7af5a2f000fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Third Slide" width="100%">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-	</div>
+    <div class="container-fluid p-0">
+        <div class="row benefits">
+            <div class="col-lg-4 col-md-4 col-sm-4 p-0">
+                <div class="row benefits-single m-0">
+                    <div class="benefits-icon">
+                        <img src="icon/free-delivery.png" style="width:35px;">
+                    </div>
+                    <div class="benefits-box">
+                           <div class="benefits-main-text">Free and Fast Shipping</div>
+                           <div class="benefits-text">Every single order ships for free.<br> No minimum, no tiers, no fine print.</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 p-0 ">
+                  <div class="row benefits-single m-0">
+                    <div class="benefits-icon">
+                        <img src="icon/box.png" style="width:35px;">
+                    </div>
+                                      <div class="benefits-box">
+                           <div class="benefits-main-text">Easy Components Design</div>
+                           <div class="benefits-text">Design is driven by the belief <br>that furniture should fit the home</div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 p-0 ">
+                  <div class="row benefits-single m-0">
+                    <div class="benefits-icon">
+                        <img src="icon/warranty.png" style="width:35px;">
+                    </div>
+                                      <div class="benefits-box">
+                           <div class="benefits-main-text">Best Quality</div>
+                           <div class="benefits-text">All of our furniture uses the best<br> materials and choices for our customers.</div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 	<div class="container-fluid p-0">
 		<div data-aos="flip-right" class="row subscribe-letter">
@@ -93,12 +138,13 @@
 		</div>
 	</div>
 
-
+</div>
 
 	<!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Aos JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script type="text/javascript">
@@ -111,8 +157,6 @@
 	       });
        });
 
-
-
-    </script>
+   </script>
 </body>
 </html>
