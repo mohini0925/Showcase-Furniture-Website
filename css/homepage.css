@@ -48,7 +48,7 @@ nav a.active{
 	padding:0px 10px;
 }
 
-.carousel-item{
+#myCarousel .carousel-item{
     text-align: center;
     max-height: 550px; /* Prevent carousel from being distorted if for some reason image doesn't load */
 }
@@ -72,7 +72,7 @@ height: 400px; /* only if you want fixed height */
 
 }
 .subscribe-box{
-	margin: 15%;
+	margin: 10%;
 }
 .subscribe-text{
 	color:#b3aaa6;
@@ -131,7 +131,7 @@ button:hover{
 
 .benefits{
   margin: 50px 10%;
-  background-color: #ce907e1a;
+  background-color: #ce907e33;
   padding:3%;
 }
 
@@ -145,6 +145,11 @@ button:hover{
 .benefits-box{
   padding:0 7%;
 }
+
+.benefits-single{
+  padding:10px;
+}
+
 
 .benefits-main-text{
   font-size: 1.1rem;
@@ -160,9 +165,93 @@ button:hover{
   color: #a25d4a;
 }
 
+.product-swipe{
+    margin: 20px 10%;
+}
+
+.mt-heading2 {
+    color: #a0a0a0;
+    margin: 0 0 12px;
+    letter-spacing: 4px;
+    padding: 0 0 0 12px;
+    border-left: 9px solid #eeeeee;
+    font: 700 14px/20px "Source Sans Pro", sans-serif;
+}
+
+.mt-heading2 .head {
+    color: #3a3a3a;
+    margin: 0 0 2px;
+    letter-spacing: 0;
+    font: 700 26px/30px "Montserrat", sans-serif;
+}
+
+.mt-heading2 p {
+    margin: 0;
+}
 
 
-@media (max-width: 500px) {
+.fa-arrow-left:hover{
+  padding:0.5rem 0.6rem;
+  border-radius: 50%;
+  background-color:#f36437;
+} 
+.fa-arrow-right:hover{
+  padding:0.5rem 0.6rem;
+  border-radius: 50%;
+  background-color:#f36437;
+}
+
+.product-carousel{
+  margin: 20px 10%;
+}
+.fa-arrow-left,.fa-arrow-right{
+  color: white;
+  padding:0.5rem 0.6rem;
+  border-radius: 50%;
+  background-color:#b3aaa6aa;
+}
+
+.product-swipe-icon{
+  margin-top:30px;
+}
+
+.items .card{
+  border: none;
+}
+
+.info-wrap{
+  padding: 10px;
+}
+
+.title a{
+  color: #757575;
+  font-weight: 500;
+  text-decoration: none;
+}
+.price-new{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-family: Arial;
+  font-weight: 600;
+}
+.slick-slide:focus{
+  outline: none;
+}
+
+.title a:focus{
+  outline: none;
+}
+
+.img-image{
+width: 100%;
+object-fit: cover;
+height: 210px; /* only if you want fixed height */
+}
+
+figure{
+  margin-bottom: 0;
+}
+@media (max-width: 800px) {
  .fit-image{
 width: 100%;
 object-fit: cover;
@@ -179,7 +268,7 @@ height: 200px; /* only if you want fixed height */
 
 .subscribe-letter{
 	background-color:#5d4a41;
-	margin: 50px 2%;
+	margin: 20px 2%;
 }
 
 .subscribe-box{
@@ -232,10 +321,11 @@ height: 200px; /* only if you want fixed height */
 }
 
 .benefits{
-  margin: 20px 2%;
-  background-color: #ce907e1a;
+  margin: 30px 2%;
+  background-color: #ce907e33;
   padding:3%;
   
+
 }
 
 .benefits-icon{
@@ -266,5 +356,50 @@ height: 200px; /* only if you want fixed height */
   color: #a25d4a;
 }
 
+.product-carousel{
+  margin: 20px 2%;
+}
+
+.product-swipe{
+  margin: 30px 2%;
+}
+.product-swipe-icon{
+  margin-top:10px;
+}
+.fa-arrow-left,.fa-arrow-right{
+  color: white;
+  padding:0.3rem 0.4rem;
+  border-radius: 50%;
+  background-color:#b3aaa6aa;
+}
+
+.fa-arrow-left:hover{
+  padding:0.3rem 0.4rem;
+  border-radius: 50%;
+  background-color:#f36437;
+} 
+.fa-arrow-right:hover{
+ padding:0.3rem 0.4rem;
+  border-radius: 50%;
+  background-color:#f36437;
+}
+
+
+.mt-heading2 .head {
+    color: #3a3a3a;
+    margin: 0 0 2px;
+    letter-spacing: 0;
+    font: 700 15px/20px "Montserrat", sans-serif;
+}
+
+.mt-heading2 p{
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.col-xs-2.col-sm-2{
+  padding:0px 5px;
+
+}
 
 }
