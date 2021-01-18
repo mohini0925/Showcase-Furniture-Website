@@ -2,6 +2,30 @@
 	box-sizing: border-box;
 }
 
+.loader-container {
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+#loader {
+    display: block;
+    position: absolute;
+    font-size: 0;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;}
+
+img{
+  display: block;
+  width: 100%;
+}
+
 #wrapper{
 	width: 100%;
 	overflow: hidden;
@@ -166,7 +190,7 @@ button:hover{
 }
 
 .product-swipe{
-    margin: 20px 10%;
+    margin: 40px 10%;
 }
 
 .mt-heading2 {
@@ -246,6 +270,64 @@ button:hover{
 width: 100%;
 object-fit: cover;
 height: 210px; /* only if you want fixed height */
+}
+
+.hero-product-image .product-banner-title {
+    position: absolute;
+    z-index: 99;
+    top: 30px;
+    left: 30px;
+}
+
+.product-display{
+  margin: 20px 9%;
+}
+
+.product-display > [class*="col-"]{
+  padding-left: 5px;
+   padding-right: 5px;
+}
+
+.hero-product-image{
+  margin-top:10px;
+}
+
+.product-banner-title h4 > a{
+  color: #160d0b;
+  font-size: 1.5rem;
+  font-family: 'Raleway';
+  font-weight: 700;
+  text-decoration: none;
+
+}
+
+
+.product-banner-title h6{
+  color: #160d0b;
+  font-size: 1rem;
+  font-family: Arial;
+  font-weight: 500;
+  text-decoration: none;
+
+}
+
+.product-banner-title h4 > a:hover{
+  color: #a25d4a;
+  font-size: 1.5rem;
+  font-family: 'Raleway';
+  font-weight: 700;
+  text-decoration: none;
+
+}
+
+
+.product-banner-title h6:hover{
+  color: #a25d4a;
+  font-size: 1rem;
+  font-family: Arial;
+  font-weight: 500;
+  text-decoration: none;
+
 }
 
 figure{
@@ -400,6 +482,54 @@ height: 200px; /* only if you want fixed height */
 .col-xs-2.col-sm-2{
   padding:0px 5px;
 
+}
+
+.product-display{
+  margin: 20px 0.5%;
+}
+
+.product-banner-title h4 > a{
+  color: #160d0b;
+  font-size: 1.2rem;
+  font-family: 'Raleway';
+  font-weight: 700;
+  text-decoration: none;
+
+}
+
+
+.product-banner-title h6{
+  color: #160d0b;
+  font-size: 0.8rem;
+  font-family: Arial;
+  font-weight: 500;
+  text-decoration: none;
+
+}
+
+.product-banner-title h4 > a:hover{
+  color: #a25d4a;
+  font-size: 1.2rem;
+  font-family: 'Raleway';
+  font-weight: 700;
+  text-decoration: none;
+
+}
+
+
+.product-banner-title h6:hover{
+  color: #a25d4a;
+  font-size: 0.8rem;
+  font-family: Arial;
+  font-weight: 500;
+  text-decoration: none;
+
+}
+.hero-product-image .product-banner-title {
+    position: absolute;
+    z-index: 99;
+    top: 20px;
+    left: 20px;
 }
 
 }

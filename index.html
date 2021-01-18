@@ -28,7 +28,14 @@
 </head>
 <body>
 
-<div id="wrapper">	
+<div id="wrapper">
+  
+<!-- 
+    <div id="pre-loader" class="loader-container">
+            <div id="loader">
+                <img src="icon/loader2.svg" alt="loader">
+            </div>
+    </div> -->
     <nav class="navbar navbar-expand-md fixed-top">
         <!-- <a href="#" class="navbar-brand">Brand</a> -->
 
@@ -116,6 +123,67 @@
         </div>
     </div>
 
+    <div class="container-fluid">
+                <div class="row product-display">
+                    <div class="col-lg-3 col-md-3 col-sm-3 "  data-aos="fade-right" data-aos-duration="2000">
+                        <div class="hero-product-image ">
+                            <a href="#">
+                                <img src="https://live.hasthemes.com/html/7/helendo-preview/helendo/assets/images/banners/h-g-1.jpg" class="img-fluid" alt="Banner images">
+                            </a>
+                            <div class="product-banner-title">
+                                <h4><a href="#">Wooden deco</a></h4>
+                                <h6>Deco collection</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="hero-product-image ">
+                            <a href="#">
+                                <img src="https://live.hasthemes.com/html/7/helendo-preview/helendo/assets/images/banners/h-g-2.jpg" class="img-fluid" alt="Banner images">
+                            </a>
+                            <div class="product-banner-title">
+                                <h4><a href="#">Helen chair</a></h4>
+                                <h6>Deco collection</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3"  data-aos="fade-left" data-aos-duration="2000">
+                        <div class="hero-product-image ">
+                            <a href="#">
+                                <img src="http://live.hasthemes.com/html/7/helendo-preview/helendo/assets/images/banners/h-g-3.jpg" class="img-fluid" alt="Banner images">
+                            </a>
+                            <div class="product-banner-title">
+                                <h4><a href="#">Vase of flowers</a></h4>
+                                <h6>Deco collection</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-right" data-aos-duration="2000">
+                        <div class="hero-product-image ">
+                            <a href="#">
+                                <img src="http://live.hasthemes.com/html/7/helendo-preview/helendo/assets/images/banners/h-g-4.jpg" class="img-fluid" alt="Banner images">
+                            </a>
+                            <div class="product-banner-title">
+                                <h4><a href="#">Wood eggs</a></h4>
+                                <h6>Deco collection</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
+                        <div class="hero-product-image ">
+                            <a href="#">
+                                <img src="http://live.hasthemes.com/html/7/helendo-preview/helendo/assets/images/banners/h-g-5.jpg" class="img-fluid" alt="Banner images">
+                            </a>
+                            <div class="product-banner-title">
+                                <h4><a href="#">TV shelves Helen</a></h4>
+                                <h6>Table collection</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
     <div class="container-fluid p-0">
             <div class="product-swipe d-flex justify-content-between">
                 <div class="mt-heading2">
@@ -131,7 +199,7 @@
             </div>
     </div>
 
-
+ 
     <div class="container-fluid p-0">
         <div class="row product-carousel">
                 <div class="col-md-12 p-0">
@@ -274,22 +342,23 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
     <!-- Aos JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Slick -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
-    <script type="text/javascript">
-       
+    <script type="text/javascript">   
 
-          
+
          $(function() {
 	        $('#ChangeToggle').click(function() {
 	        $('#navbar-hamburger').toggleClass('hidden');
 	        $('#navbar-close').toggleClass('hidden');  
 	       });
-       });
+          });
 
          $(document).ready(function(){
              AOS.init();
@@ -338,6 +407,8 @@
 
             });
 
+         
+  
 
    </script>
 </body>
