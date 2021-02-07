@@ -49,7 +49,7 @@ nav a{
 }
 
 nav a:hover{
-    color: #160d0b;
+  color: #160d0b;
 	font-size: 16px;
 	font-weight: 600;
 	border-bottom: 3px solid #a25d4a;
@@ -370,11 +370,12 @@ figure{
 }
 
 
-.f-widget-nav a:hover{
+.footer-back .f-widget-nav a:hover{
   color: #fff;
   text-decoration: none;
   outline: none;
   font-weight: 400;
+  border: none;
 }
 
 .social-network .item{
@@ -391,6 +392,28 @@ figure{
   color: #f36437;
   font-size: 22px;
 }
+
+/*Back to top*/
+
+#back-top{
+    bottom: 40px;
+    z-index: 9;
+    right: 20px;
+    width: 50px;
+    color: #fff;
+    height: 50px;
+    cursor: pointer;
+    font-size: 25px;
+    position: fixed;
+    line-height: 47px;
+    text-align: center;
+    border-radius: 50px;
+    background: #a25d4a;
+  }
+
+
+
+
 @media (max-width: 800px) {
  .fit-image{
 width: 100%;

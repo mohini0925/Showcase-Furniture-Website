@@ -11,6 +11,7 @@
 
      <!-- Font Awesome Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <a href="https://icons8.com/icon/15817/up-arrow"></a>
 	<!-- AOS -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -18,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -126,11 +129,11 @@
                 <div class="row product-display">
                     <div class="col-lg-3 col-md-3 col-sm-3 "  data-aos="fade-right" data-aos-duration="2000">
                         <div class="hero-product-image ">
-                            <a href="#">
+                            <a href="productpage.html">
                                 <img src="https://live.hasthemes.com/html/7/helendo-preview/helendo/assets/images/banners/h-g-1.jpg" class="img-fluid" alt="Banner images">
                             </a>
                             <div class="product-banner-title">
-                                <h4><a href="#">Wooden deco</a></h4>
+                                <h4><a href="productpage.html">Wooden deco</a></h4>
                                 <h6>Deco collection</h6>
                             </div>
                         </div>
@@ -386,6 +389,8 @@
                         </div>
                     </div>
 
+        <span id="back-top"><img style="padding: 12px;" src="https://img.icons8.com/fluent-systems-regular/100/ffffff/up.png"/></i></span>
+
 </div>
 
 	<!-- Jquery -->
@@ -413,6 +418,9 @@
           });
 
          $(document).ready(function(){
+
+
+
              AOS.init();
 
             $('.items').slick({
@@ -454,6 +462,20 @@
             $('.product-swipe-icon-right').click(function(){
               $('.items').slick('slickNext');
             })
+
+                $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('#back-top').fadeIn();
+                } else {
+                    $('#back-top').fadeOut();
+                }
+            });
+            
+            //Click event to scroll to top
+        $('#back-top').click(function(){
+            $('html, body').animate({scrollTop : 0},800);
+            return false;
+        });
 
             AOS.refresh();
 
