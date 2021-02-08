@@ -46,6 +46,7 @@ Navbar*/
 	background-color: #ffffff;
 	padding: 0;
 	height: 40px;
+   box-shadow: 0px 1px 10px #999;
 }
 
 .main-nav a{
@@ -148,7 +149,7 @@ button{
 Product main*/
 
 .product-main-display{
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .product-main-display:after {
@@ -313,7 +314,11 @@ display: flex;
 }
 
 .product-page-display{
-   margin: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  align-items: start;
+  padding:0 18px;
 }
 
 .filter-box img{
@@ -417,26 +422,56 @@ height: 300px; /* only if you want fixed height */
 .page-link{
   background-color:#a25d4a; 
   color:white;
-  margin: 0 8px;
+  margin: 0 10px;
   border-radius: 50px;
-  border: none;
+  padding: .5rem .85rem;
+  border: 2px solid #a25d4a;
 }
 
+.page-link:hover{
+  background-color:#a25d4a; 
+  color:white;
+}
 .page-item:first-child {
-    margin-left: 0;
+    margin-right: 10px;
     border:none;
     background-color: none;
-    color: #a25d4a
 
 }
 
 .page-item:last-child {
-    margin-left: 0;
-        border:none;
+    margin-left: 10px;
+    border:none;
     background-color: none;
-    color: #a25d4a
 
 }
+
+.page-link-left:hover{
+  color: #a25d4a;
+}
+
+.page-item:first-child:hover{
+  transform: scale(1.2); 
+}
+
+.page-link-right:hover{
+  color: #a25d4a;
+}
+
+.page-item:last-child:hover{
+  transform: scale(1.2); 
+}
+
+.page-link-left{
+  color: #a25d4a;
+  font-size: 25px;
+}
+
+.page-link-right{
+  color: #a25d4a;
+  font-size: 25px;
+}
+
 
 .page-item.active .page-link {
     z-index: 1;
@@ -447,9 +482,9 @@ height: 300px; /* only if you want fixed height */
 
 
 #back-top{
-    bottom: 40px;
+    bottom: 45px;
     z-index: 9;
-    right: 20px;
+    right: 25px;
     width: 50px;
     color: #fff;
     height: 50px;
@@ -535,8 +570,38 @@ height: 300px; /* only if you want fixed height */
         margin-top: 20px;
   }
 
+  .fit-image {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
 }
 
+.product-page-display{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+  align-items: start;
+  padding:0 18px;
+}
+
+
+}
+
+@media only screen and (max-width: 500px){
+    .fit-image {
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+}
+
+.product-page-display{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-gap: 10px;
+  align-items: start;
+  padding:0 10px;
+}
+}
 
 /*modal*/
 
@@ -587,4 +652,9 @@ height: 300px; /* only if you want fixed height */
 
 .modal-header .close {
     margin: 5px;
+}
+
+.close:hover{
+  outline: none;
+  border: none;
 }
