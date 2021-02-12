@@ -1,0 +1,309 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+    padding-top: 40px;
+}
+/*Preloader*/
+
+.loader-container {
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+#loader {
+    display: block;
+    position: absolute;
+    font-size: 0;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+#loader img {
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+}
+#wrapper{
+	width: 100%;
+	overflow: hidden;
+    position: relative;
+    padding: 0;
+}
+/*
+Navbar*/
+
+.navbar{
+	background-color: #ffffff;
+	padding: 0;
+	height: 40px;
+   box-shadow: 0px 1px 10px #999;
+}
+
+.main-nav a{
+	color: #160d0b;
+	font-size: 16px;
+	font-weight: 400;
+	margin-right: 20px;
+}
+
+.main-nav a:hover{
+    color: #160d0b;
+	font-size: 16px;
+	font-weight: 600;
+	border-bottom: 3px solid #a25d4a;
+}
+
+.main-nav a.active{
+	color: #160d0b;
+	font-size: 16px;
+	font-weight: 600;
+	border-bottom: 3px solid #a25d4a;
+
+}
+
+.hidden{
+    display: none;
+}
+
+.navbar-toggler:focus{
+  border: none;
+  outline: none;
+  align-items: center;
+  
+}
+#navbarCollapse{
+	background-color: white;
+	padding:0px 10px;
+}
+
+.nav-widget-1 {
+    width: 33.3%;
+    float: left;
+}
+button{
+  position:absolute;
+  right: 0px;
+  top: 0px;
+  border:none;
+  height:40px;
+  outline:none;
+  text-align:center;
+}
+/*End of nav bar*/
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+/*Product Breadcrumb*/
+.product-breadcrumb{
+    padding: 15px 0px 15px;
+    background-color: #f4f4f4;
+}
+
+.product-breadcrumb .breadcrumbs ul li{
+  margin:0 10px 0 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.product-breadcrumb .breadcrumbs{
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 300;
+    overflow: hidden;
+    color: #383838;
+}
+
+ .breadcrumbs ul .fa-angle-right {
+    margin: 0 0 0 5px;
+}
+.product-breadcrumb .breadcrumbs ul a{
+  color: #868686;
+  text-decoration: none;
+}
+.product-breadcrumb .breadcrumbs ul a:hover{
+  color: #f36437;
+  text-decoration: none;
+}
+
+
+/*Footer
+*/
+.footer-back{
+ background-color: #160d0b;
+ padding: 5%;
+}
+
+.f-widget-heading{
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+
+}
+
+.f-widget-nav li {
+    overflow: hidden;
+    display: block;
+    margin: 0 0 15px;
+}
+
+.f-widget-nav a{
+  color: #666;
+}
+
+
+.f-widget-nav a:hover{
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  font-weight: 400;
+}
+
+.social-network .item{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.social-network .item .fa{
+  color: #666;
+  font-size: 20px;
+}
+
+.social-network .item .fa:hover{
+  color: #f36437;
+  font-size: 22px;
+}
+.filter-widget{
+    padding: 10px;
+}
+/*End of footer*/
+
+#back-top{
+    bottom: 45px;
+    z-index: 9;
+    right: 25px;
+    width: 50px;
+    color: #fff;
+    height: 50px;
+    cursor: pointer;
+    font-size: 25px;
+    position: fixed;
+    line-height: 47px;
+    text-align: center;
+    border-radius: 50px;
+    background: #a25d4a;
+  }
+
+#back-top > img{
+  display: block;
+}
+
+/*Prd0uct Detail Wrapper*/
+.product-detail-wrapper{
+   margin: 30px auto;
+}
+
+.detail-header{
+ font-weight: 600;
+ font-size: 1.6rem;
+}
+
+@media (max-width: 800px) {
+
+.footer-back{
+ background-color: #160d0b;
+ padding:5% 2%;
+}
+
+.f-widget-heading{
+  color: #fff;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.f-widget-nav li {
+    overflow: hidden;
+    display: block;
+    margin: 0 0 8px;
+}
+
+.f-widget-nav li a {
+  font-size: 12px;
+}
+
+.nav-wid-style {
+  padding-left: 20px;
+}
+}
+
+@media screen and  (min-width: 768px){
+  .product-detail-wrapper{
+    width: 750px;}
+}
+
+@media screen and (min-width: 992px){
+  .product-detail-wrapper{
+    width: 970px;}
+}
+
+
+@media screen and (min-width: 1200px){
+  .product-detail-wrapper{
+    width: 1230px;}
+}
+/*End of media*/
+
+.thumbnails{
+  margin:20px 10px; 
+}
+
+.thumbnails li {
+    float: left;
+    padding: 5px;
+}
+
+
+.thumbnails-item{
+  overflow: hidden;
+  height: 100px;
+}
+
+.thumbnails-item img{
+  height: auto;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.slick-prev::before, .slick-next::before { color: #ccc !important; }
+.slick-prev{  
+ left: -20px !important;
+ }
+.slick-next{
+ right: -20px !important;
+}
