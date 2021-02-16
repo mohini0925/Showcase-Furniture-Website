@@ -90,7 +90,7 @@ Navbar*/
     width: 33.3%;
     float: left;
 }
-button{
+.main-nav button{
   position:absolute;
   right: 0px;
   top: 0px;
@@ -137,6 +137,85 @@ a:hover, a:visited, a:link, a:active
   color: #f36437;
   text-decoration: none;
 }
+/*
+product carousl*/
+.related-product{
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 20px 0px;
+  font-weight: 600;
+  letter-spacing:1px;
+}
+
+.fa-arrow-left:hover{
+  padding:0.5rem 0.6rem;
+  border-radius: 50%;
+  background-color:#f36437;
+} 
+.fa-arrow-right:hover{
+  padding:0.5rem 0.6rem;
+  border-radius: 50%;
+  background-color:#f36437;
+}
+
+.fa-arrow-left,.fa-arrow-right{
+  color: white;
+  padding:0.5rem 0.6rem;
+  border-radius: 50%;
+  background-color:#b3aaa6aa;
+}
+
+.product-swipe-icon{
+  margin-top:30px;
+}
+
+.items .card{
+  border: none;
+}
+
+.info-wrap{
+  padding: 10px;
+}
+
+.title a{
+  color: #757575;
+  font-weight: 500;
+  text-decoration: none;
+}
+.price-new{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-family: Arial;
+  font-weight: 600;
+}
+.slick-slide:focus{
+  outline: none;
+}
+.slick-prev::before, .slick-next::before {
+  color: #ccc !important;
+   }
+
+.slick-prev{  
+ left: -20px !important;
+ }
+.slick-next{
+ right: -20px !important;
+}
+
+.items > [class*="col-"]{
+  padding-left:0;
+}
+
+.title a:focus{
+  outline: none;
+}
+
+.img-image{
+width: 100%;
+object-fit: cover;
+height: 210px; /* only if you want fixed height */
+}
+
 
 
 /*Footer
@@ -219,8 +298,69 @@ a:hover, a:visited, a:link, a:active
 
 .detail-header{
  font-weight: 600;
- font-size: 1.6rem;
+ font-size: 1.8rem;
 }
+
+.detail-price{
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding:8px 0px;
+  color: #8c8c8c;
+  letter-spacing: 1px;
+}
+
+.detail-info{
+  font-size: 1rem;
+  font-weight:400; 
+}
+
+/*Tabs*/
+.nav-tabs .nav-link.active {
+
+    color: #a25d4a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: #fff;
+    border-color:#fff #fff;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #a25d4a;
+}
+.nav-tabs .nav-link.active:hover{
+    border-color:#fff #fff;
+    border-bottom: 3px solid #a25d4a;
+}
+.nav-tabs .nav-link:hover{
+    border: none;
+}
+.nav-tabs .nav-link{
+  padding: 10px 50px;
+}
+
+.nav-tabs .nav-item button:focus{
+  outline: none;
+}
+
+.nav-link{
+  background-color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-tabs {
+   border: none;
+}
+
+.tab-content{
+  padding: 2rem 5rem;
+}
+
+.tab-pane{
+  text-align: justify;
+    font-size: 1rem;
+  font-weight:400; 
+}
+
 
 @media (max-width: 800px) {
 
@@ -250,11 +390,88 @@ a:hover, a:visited, a:link, a:active
 .nav-wid-style {
   padding-left: 20px;
 }
+/*Product detail*/
+
+
+.zooming{
+  padding:0;
+  margin-top: -30px;
+}
+
+.detail-header{
+ font-weight: 600;
+ font-size: 1.5rem;
+}
+
+.detail-price{
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding:8px 0px;
+  color: #8c8c8c;
+  letter-spacing: 1px;
+}
+
+.detail-info{
+  font-size: 0,9rem;
+  font-weight:400; 
+}
+
+.slick-prev{  
+ display: none !important;
+ }
+.slick-next{
+display: none !important;
+}
+
+
+.related-product{
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 20px 0px;
+  font-weight: 700;
+  letter-spacing:1px;
+}
+
+
+/*Tabs*/
+
+.nav-tabs .nav-link.active {
+
+    color: #a25d4a;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #fff;
+    border-color:#fff #fff;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #a25d4a;
+}
+
+.nav-tabs .nav-link{
+  padding: 8px 15px;
+}
+
+
+.nav-link{
+  background-color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.tab-content{
+  padding: 1rem 1rem;
+}
+.tab-pane{
+
+  font-size: 0.9rem;
+  font-weight:400; 
+}
 }
 
 @media screen and  (min-width: 768px){
   .product-detail-wrapper{
     width: 750px;}
+
 }
 
 @media screen and (min-width: 992px){
@@ -300,10 +517,3 @@ img {
     height: auto;
 }
 
-.slick-prev::before, .slick-next::before { color: #ccc !important; }
-.slick-prev{  
- left: -20px !important;
- }
-.slick-next{
- right: -20px !important;
-}
