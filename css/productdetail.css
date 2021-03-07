@@ -46,7 +46,7 @@ Navbar*/
 	background-color: #ffffff;
 	padding: 0;
 	height: 40px;
-   box-shadow: 0px 1px 10px #999;
+  box-shadow: 0px 1px 10px #999;
 }
 
 .main-nav a{
@@ -142,7 +142,7 @@ product carousl*/
 .related-product{
   text-align: center;
   font-size: 1.5rem;
-  margin: 20px 0px;
+  margin:50px 0px -30px;
   font-weight: 600;
   letter-spacing:1px;
 }
@@ -163,10 +163,6 @@ product carousl*/
   padding:0.5rem 0.6rem;
   border-radius: 50%;
   background-color:#b3aaa6aa;
-}
-
-.product-swipe-icon{
-  margin-top:30px;
 }
 
 .items .card{
@@ -307,13 +303,76 @@ height: 210px; /* only if you want fixed height */
   padding:8px 0px;
   color: #8c8c8c;
   letter-spacing: 1px;
+  margin: 8px 0;
 }
 
 .detail-info{
   font-size: 1rem;
   font-weight:400; 
+  margin: 10px 0;
+}
+/*Review*/
+.comment-form-comment label {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: 400;
+    font-size: 1.1rem;
 }
 
+.comment-form-comment .comment-notes {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cfcfcf;
+    height: 140px;
+}
+
+.comment-notes:focus{
+  outline: none;
+}
+
+.comment-form-author input:focus, .comment-form-email input:focus{
+  outline: none;
+}
+
+.comment-form-comment{
+    margin: 0 10px 20px 10px;
+
+}
+
+.comment-input {
+    overflow: hidden;
+}
+.comment-form-author, .comment-form-email, .comment-form-url {
+    float: left;
+    padding: 0 10px;
+
+}
+.comment-input .comment-form-author, .comment-input .comment-form-email {
+    width: 50%;
+}
+
+.comment-input label {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.comment-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cfcfcf;
+    height: 40px;
+}
+
+.comment-form-submit .comment-submit {
+    background: #5d4a41;
+    color: #ffffff;
+    border: none;
+    padding: 8px 28px;
+    margin-top: 20px;
+    margin: 20px 0 0 10px;
+}
 /*Tabs*/
 .nav-tabs .nav-link.active {
 
@@ -427,12 +486,15 @@ display: none !important;
 .related-product{
   text-align: center;
   font-size: 1.2rem;
-  margin: 20px 0px;
+  margin:50px 0px -30px;
   font-weight: 700;
   letter-spacing:1px;
 }
-
-
+/*
+Reviews*/
+.comment-input .comment-form-author, .comment-input .comment-form-email {
+    width: 100%;
+}
 /*Tabs*/
 
 .nav-tabs .nav-link.active {
