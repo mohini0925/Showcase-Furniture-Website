@@ -51,14 +51,102 @@
             <div id="navbar-close" class="hidden"><i class="fa fa-times"></i></div>
         </button>
 
+
+
         <div class="collapse navbar-collapse" id="navbarCollapse">
+
             <div class="navbar-nav ml-auto">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="#" class="nav-item nav-link">About</a>
-                <a href="#" class="nav-item nav-link">Contacts</a>                
-                <a href="productpage.html" class="nav-item nav-link">Products</a>
-                <a href="login.html" class="nav-item nav-link">Login/Register</a>
+                <a href="#" class="nav-item nav-link">Contacts</a>
+                <span class="drop">
+                <a href="productpage.html" class="nav-item nav-link d-inline-block">Products</a><span class="d-inline float-right icon-toggle"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                <div class="mt-dropmenu text-left">
+                <!-- mt frame start here -->
+                <div class="mt-frame">
+                    <!-- mt f box start here -->
+                    <div class="mt-f-box">
+                        <!-- mt col3 start here -->
+                        <div class="mt-col-3">
+                            <div class="sub-dropcont">
+                                <strong class="title"><a href="#" class="mt-subopener">Living Room</a></strong>
+                                <div class="sub-drop">
+                                    <ul>
+                                        <li><a href="productpage.html">Living Room Storage</a></li>
+                                        <li><a href="productpage.html">TV & media Storage</a></li>
+                                        <li><a href="productpage.html">Sofas & armchairs</a></li>
+                                        <li><a href="productpage.html">Coffe & side tables</a></li>
+                                        <li><a href="productpage.html">Living room lightning</a></li>
+                              
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mt col3 end here -->
+
+                        <!-- mt col3 start here -->
+                        <div class="mt-col-3">
+                            <div class="sub-dropcont">
+                                <strong class="title"><a href="#" class="mt-subopener">Bedroom</a></strong>
+                                <div class="sub-drop">
+                                    <ul>
+                                        <li><a href="productpage.html">Beds</a></li>
+                                        <li><a href="productpage.html">Mattresses</a></li>
+                                            <li><a href="productpage.html">Lighting</a></li>
+                                              <li><a href="productpage.html">Bedding, textiles & rugs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sub-dropcont">
+                                <strong class="title"><a href="#" class="mt-subopener">Bathroom</a></strong>
+                                <div class="sub-drop">
+                                    <ul>
+                                       <li><a href="productpage.html">Sink Cabinets</a></li>
+                                        <li><a href="productpage.html">Bathroom Storage</a></li>
+                                         <li><a href="productpage.html">Sinks</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mt col3 end here -->
+
+                        <!-- mt col3 start here -->
+                        <div class="mt-col-3">
+                            <div class="sub-dropcont">
+                                <strong class="title"><a href="#" class="mt-subopener">Dining</a></strong>
+                                <div class="sub-drop">
+                                    <ul>
+                                        <li><a href="productpage.html">Dining Tables</a></li>
+                                         <li><a href="productpage.html">Dining Chairs</a></li>
+                                        <li><a href="productpage.html">Dining Sets</a></li>
+                                        <li><a href="productpage.html">Dining Storage</a></li>
+                                        <li><a href="productpage.html">Stools & Benches</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mt col3 end here -->
+
+                        <!-- mt col3 start here -->
+                        <div class="mt-col-3 promo">
+                            <div class="mt-promobox">
+                                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIwEHcaucGr8HcRBFRIeX0_dLYeM9Jp5hW8g&usqp=CAU" alt="promo banner" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!-- mt col3 end here -->
+                    </div>
+                    <!-- mt f box end here -->
+                </div>
+                <!-- mt frame end here -->
+                </div>
+                <span class="mt-mdropover"></span>
+                </span>
+             
+                <div class="search-form">
+                <form class="form-inline"> <input class="form-control search-input" type="text" placeholder="Search"></form>
+                </div> 
             </div>
+
         </div>
     </nav>
 
@@ -411,6 +499,34 @@ These high-quality, low-maintenance chairs are ideal for any gathering both indo
               // Use EasyZoom's `swap` method
               api1.swap($this.data('standard'), $this.attr('href'));
             });
+
+            $(document).ready(function(){
+              $(".mt-subopener").click(function(){
+                $(".sub-drop").toggle();
+              });
+            });
+
+            $(document).ready(function(){
+              $(".icon-toggle").click(function(){
+                $(".mt-dropmenu").toggle();
+              });
+            });
+
+        $(document).ready( function() {
+            /* Check width on page load*/
+            if ( $(window).width() < 767) {
+             $('.mt-dropmenu').addClass('open');
+            }
+            else {}
+         });
+
+         $(window).resize(function() {
+            /*If browser resized, check width again */
+            if ($(window).width() < 767) {
+             $('.mt-dropmenu').addClass('open');
+            }
+            else {$('.mt-dropmenu').removeClass('open');}
+         });
 
            
          $(document).ready(function(){
